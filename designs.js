@@ -30,4 +30,5 @@ $(document).ready(function() {
       }
 
 });
- //empty canvas function and reset button.
+//event listener for colors (drawing) and the functionality.
+//empty canvas function and reset button. Maybe save?
