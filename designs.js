@@ -17,6 +17,8 @@ $(document).ready(function() {
 //Reset-button functionality: empties the "canvas".
   $("#button2").click(function() {
     canvas.empty();
+    $("#input_height").val(1);
+    $("#input_width").val(1);
 });
 
 //Toggle Grid Size Picker, when it is not needed.
