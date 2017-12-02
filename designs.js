@@ -41,7 +41,7 @@ $(document).ready(function() {
       }
     }
   }
-  //When td-element is clicked, colorPicker values is checked and saved in color variable and the td's background-color values is set same as the color. 
+  //When td-element is clicked, colorPicker values is checked and saved in color variable and the td's background-color values is set same as the color.
   $(canvas).on( 'click', 'td', function() {
       const color = colorPicker.val();
       $(this).css("background-color", color);
