@@ -10,21 +10,24 @@
 <body>
     <h1><span>L</span>ab: Pixel Art Maker</h1>
 
-    <h2>Choose Grid Size</h2>
-    <form id="sizePicker">
-        Grid Height:
-        <input type="number" id="input_height" name="height" min="1" value="1">
-        Grid Width:
-        <input type="number" id="input_width" name="width" min="1" value="1">
-        <!-- <input type="submit"> -->
-        <div id="button1">SUBMIT</div>
-    </form>
-
-    <h2>Pick A Color</h2>
-    <input type="color" id="colorPicker">
+    <div class="button" id="toggle">Toggle Grid Size Picker</div>
+        <form id="sizePicker">
+          <h2>Choose Grid Size</h2>
+          Grid Height:
+          <input type="number" id="input_height" name="height" min="1" value="1">
+          Grid Width:
+          <input type="number" id="input_width" name="width" min="1" value="1">
+          <!-- <input type="submit"> -->
+          <div id="button-container">
+          <div class="button" id="button2">RESET</div>
+          <div class="button" id="button1">SUBMIT</div>
+          </div>
+        </form>
 
 
     <h2>Design Canvas</h2>
+    <h3>Pick A Color <input type="color" id="colorPicker"></h3>
+
     <table id="pixel_canvas"></table>
 
     <script src="designs.js"></script>
