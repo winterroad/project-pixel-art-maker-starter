@@ -1,19 +1,65 @@
 body {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#sizePicker{
+    display: inline-block;
+    border: 1px solid black;
+    margin: 2rem;
+    padding: 2rem;
 }
 
 h1 {
-    font-family: Monoton;
-    font-size: 70px;
-    margin: 0.2em;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    margin: 4rem 0 2rem;
 }
 
-h2 {
-    margin: 1em 0 0.25em;
+h3{
+  font-weight: lighter;
 }
 
-h2:first-of-type {
-    margin-top: 0.5em;
+input[type=number]{
+  margin: 1rem;
+}
+
+.button{
+  background-color: #34495e;
+  -webkit-box-shadow: 11px 10px 38px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 10px 38px -6px rgba(0,0,0,0.75);
+  box-shadow: 11px 10px 38px -6px rgba(0,0,0,0.75);
+  opacity: 0.85;
+  border: none;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  width: 6rem;
+  padding: 1rem;
+  margin: 1rem;
+  display: inline-block;
+}
+
+#toggle{
+  width: 15rem;
+  display: block;
+  margin: auto;
+}
+
+.button:hover{
+  background-color: #2c3e50;
+  -webkit-box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
+  box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
+}
+
+#button2:hover{
+  background-color: #e74c3c;
+  -webkit-box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
+  box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
 }
 
 table,
@@ -36,5 +82,5 @@ td {
 }
 
 input[type=number] {
-    width: 6em;
+    width: 3rem;
 }
