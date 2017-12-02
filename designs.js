@@ -1,9 +1,9 @@
 //Let's make sure that DOM is ready.
 $(document).ready(function() {
 
-// Select color input
+// Select color input, set constant colorPicker.
   const colorPicker = $("#colorPicker");
-//Select the table "pixel-canvas".
+//Select the table "pixel-canvas", set constant canvas.
   const canvas = $("#pixel_canvas");
 
 // When size is submitted by the user (clicking the button), call makeGrid with inputHeight- and inputWidth-parametrs.
@@ -14,21 +14,21 @@ $(document).ready(function() {
     makeGrid(inputHeight, inputWidth);
 });
 
-//Reset-button functionality: empties the "canvas".
+//Reset-button functionality: empties the "canvas". Sets the values back to default (=1).
   $("#button2").click(function() {
     canvas.empty();
     $("#input_height").val(1);
     $("#input_width").val(1);
-});
+  });
 
 //Toggle Grid Size Picker, when it is not needed.
   $( "#toggle" ).click(function() {
     $("#sizePicker").toggle(function() {
+    });
   });
-});
 
   function makeGrid(height, width) {
-    // Get rid of the old.
+    // Get rid of the old canvas.
     canvas.empty();
 
     // Create as many rows as the height
@@ -49,5 +49,5 @@ $(document).ready(function() {
       $(this).css("background-color", color);
   });
 
-
+//..and all this was inside of "document.ready"..
 });
