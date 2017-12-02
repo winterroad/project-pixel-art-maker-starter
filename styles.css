@@ -1,11 +1,12 @@
 body {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1 {
     font-family: 'Press Start 2P', cursive;
     font-size: 2rem;
-    margin: 0.2em;
+    margin: 6rem 0 2rem;
 }
 
 h2 {
@@ -16,17 +17,37 @@ h2:first-of-type {
     margin-top: 0.5em;
 }
 
+input[type=number]{
+  margin: 1rem;
+}
+
 #button1{
-  background-color: #4CAF50; /* Green */
+  background-color: #34495e;
+  -webkit-box-shadow: 11px 10px 38px -6px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 10px 38px -6px rgba(0,0,0,0.75);
+  box-shadow: 11px 10px 38px -6px rgba(0,0,0,0.75);
+  opacity: 0.85;
   border: none;
-  color: white;
-  padding: 15px 32px;
+  color: #fff;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  width: 6rem;
+  padding: 1rem;
+  margin: auto;
 }
-table, tr, td {
+
+#button1:hover{
+  background-color: #2c3e50;
+  -webkit-box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
+  -moz-box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
+  box-shadow: 11px 10px 38px -17px rgba(0,0,0,0.75);
+}
+
+table,
+tr,
+td {
     border: 1px solid black;
 }
 

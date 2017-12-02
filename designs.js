@@ -29,6 +29,14 @@ $(document).ready(function() {
         }
       }
 
+      $(canvas).on( 'click', 'td', function() {
+
+        const color = colorPicker.val();
+        $(this).css("background-color", color);
+
+      });
+
+
 });
 //event listener for colors (drawing) and the functionality.
 //empty canvas function and reset button. Maybe save?
